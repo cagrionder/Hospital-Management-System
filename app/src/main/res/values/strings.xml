@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">firebasekayit</string>
+    <string name="app_name">Hospital Management System</string>
+    <string name="hospital_management">Hospital Management System</string>
 </resources>
