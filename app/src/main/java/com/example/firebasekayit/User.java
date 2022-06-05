@@ -19,7 +19,8 @@ public class User {
         this.sifre = sifre;
     }
 
-    public User(String ad, String soyad, String cinsiyet, String tarih, String telefon, String eMail, String adres, String sifre) {
+    public User(String tc, String ad, String soyad, String cinsiyet, String tarih, String telefon, String eMail, String adres, String sifre) {
+        this.tc = tc;
         this.ad = ad;
         this.soyad = soyad;
         this.cinsiyet = cinsiyet;

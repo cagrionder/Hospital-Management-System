@@ -86,7 +86,7 @@ public class KayitActivity extends AppCompatActivity {
         geri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(KayitActivity.this, MainActivity.class);
+                Intent intent = new Intent(KayitActivity.this, LoginActivity.class);
                 finish();
                 startActivity(intent);
             }
@@ -96,8 +96,8 @@ public class KayitActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 txtTc = kayitTc.getText().toString().trim();
-                txtAd = kayitAd.getText().toString().trim();
-                txtSoyad = kayitSoyad.getText().toString().trim();
+                txtAd = kayitAd.getText().toString();
+                txtSoyad = kayitSoyad.getText().toString();
                 if (kadin.isChecked())
                     txtCinsiyet = kadin.getText().toString().trim();
                 if (erkek.isChecked())
@@ -108,7 +108,7 @@ public class KayitActivity extends AppCompatActivity {
                 txtAdres = kayitAdres.getText().toString().trim();
                 txtSifre = kayitSifre.getText().toString().trim();
                 if (!TextUtils.isEmpty(txtTc) && !TextUtils.isEmpty(txtAd) && !TextUtils.isEmpty(txtSoyad) && !TextUtils.isEmpty(txtCinsiyet) && !TextUtils.isEmpty(txtDt) && !TextUtils.isEmpty(txtTel) && !TextUtils.isEmpty(txtMail) && !TextUtils.isEmpty(txtAdres) && !TextUtils.isEmpty(txtSifre)) {
-                    myRef.child("Kullanicilar").child(txtTc).setValue(new User(txtAd, txtSoyad, txtCinsiyet, txtDt, txtTel, txtMail, txtAdres, txtSifre));
+                    myRef.child("Kullanicilar").child(txtTc).setValue(new User(txtTc, txtAd, txtSoyad, txtCinsiyet, txtDt, txtTel, txtMail, txtAdres, txtSifre));
                     kayitTc.setText("");
                     kayitAd.setText("");
                     kayitSoyad.setText("");
@@ -124,12 +124,11 @@ public class KayitActivity extends AppCompatActivity {
                     Toast.makeText(KayitActivity.this, "Boş alan bırakmayınız lütfen.", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(KayitActivity.this, MainActivity.class);
+        Intent intent = new Intent(KayitActivity.this, LoginActivity.class);
         finish();
         startActivity(intent);
     }
