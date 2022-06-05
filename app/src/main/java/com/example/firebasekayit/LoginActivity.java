@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                                 if (sifre.equals(stringSifre)) {
 
                                     // BURAYA INTENT YAZILACAK
-                                    Intent intent = new Intent(LoginActivity.this, Main.class);
+                                    Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                                     finish();
                                     startActivity(intent);
                                 }

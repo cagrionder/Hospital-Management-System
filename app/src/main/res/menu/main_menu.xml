@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_tansiyon"
+            android:title="Tansiyon Ölç (Gelecekte)"/>
+        <item
+            android:id="@+id/nav_nabiz"
+            android:title="Nabız Ölç (Gelecekte)"/>
+        <item
+            android:id="@+id/nav_bolum"
+            android:title="Hangi Bölüme Gitmeliyim?"
+            android:icon="@drawable/info"/>
+
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_exit"
+            android:title="Çıkış"
+            android:icon="@drawable/logout_icon"/>
+
+    </group>
+</menu>

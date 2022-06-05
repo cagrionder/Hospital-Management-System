@@ -119,6 +119,7 @@ public class KayitActivity extends AppCompatActivity {
                     kayitMail.setText("");
                     kayitAdres.setText("");
                     kayitSifre.setText("");
+                    Toast.makeText(KayitActivity.this, "Kayıt Başarıyla Gerçekleşti.", Toast.LENGTH_SHORT).show();
                 }
                 else
                     Toast.makeText(KayitActivity.this, "Boş alan bırakmayınız lütfen.", Toast.LENGTH_SHORT).show();
