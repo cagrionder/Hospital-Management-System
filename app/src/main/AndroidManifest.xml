@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.firebasekayit" >
 
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+
 
     <application
         android:allowBackup="true"
@@ -19,8 +22,14 @@
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
+            android:name=".PulseMeasure"
+            android:exported="false"/>
+        <activity
+            android:name=".WhichDepartment"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
