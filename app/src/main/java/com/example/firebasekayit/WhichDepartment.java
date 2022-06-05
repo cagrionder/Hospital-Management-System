@@ -34,6 +34,7 @@ public class WhichDepartment extends AppCompatActivity {
             else{
                 editText.setText(result);
             }
+            result = "";
         });
     }
 }

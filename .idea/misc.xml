@@ -3,25 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable-anydpi/menu.xml" value="0.2625" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2695" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/buttondesign.xml" value="0.2695" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/ic_female.xml" value="0.2115" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/ic_female_256.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2695" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/ic_male_256.xml" value="0.2695" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2625" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.2625" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2625" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/logout_icon.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/radio_normal.xml" value="0.2695" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/radio_selected.xml" value="0.2695" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/radio_selector.xml" value="0.2695" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/radio_text.xml" value="0.2695" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/side_nav_bar.xml" value="0.2625" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/drawable/textdesign.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/activity_kayit.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/activity_login.xml" value="0.4041666666666667" />
         <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/Users/hakan/Downloads/Hospital-Management-System/app/src/main/res/drawable/ic_launcherNew_foreground.xml" value="0.2165" />
-        <entry key="..\:/Users/hakan/Downloads/Hospital-Management-System/app/src/main/res/layout/activity_login.xml" value="0.15217391304347827" />
-        <entry key="..\:/Users/hakan/Downloads/Hospital-Management-System/app/src/main/res/layout/activity_main_.xml" value="0.1" />
-        <entry key="..\:/Users/hakan/Downloads/Hospital-Management-System/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
-        <entry key="..\:/Users/hakan/Downloads/Hospital-Management-System/app/src/main/res/layout/adapter_design.xml" value="0.1" />
-        <entry key="..\:/Users/hakan/Downloads/Hospital-Management-System/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2165" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/activity_main_.xml" value="0.21354166666666666" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/activity_menu.xml" value="0.6" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/activity_splash_screen.xml" value="0.4041666666666667" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/activity_which_department.xml" value="0.21354166666666666" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/adapter_design.xml" value="0.21354166666666666" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/content_deneme.xml" value="0.4041666666666667" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/layout/header.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/firebasekayit/app/src/main/res/menu/main_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

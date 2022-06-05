@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Hospital Management System</string>
     <string name="hospital_management">Hospital Management System</string>
+    <string name="hintIllness">Rahatsızlıkları giriniz</string>
+    <string name="g_nder">Gönder</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
