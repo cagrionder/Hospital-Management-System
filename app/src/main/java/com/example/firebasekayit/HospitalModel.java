@@ -3,10 +3,21 @@ import android.graphics.drawable.Drawable;
 
 public class HospitalModel {
     String doctorName;
-    Drawable imageDoctor;
+    //Drawable imageDoctor;
     String hospitalName;
     String departmentName;
     //bla bla
+
+
+    public HospitalModel() {
+
+    }
+
+    public HospitalModel(String doctorName, String hospitalName, String departmentName) {
+        this.doctorName = doctorName;
+        this.hospitalName = hospitalName;
+        this.departmentName = departmentName;
+    }
 
     public String getDepartmentName() {
         return departmentName;
@@ -24,13 +35,13 @@ public class HospitalModel {
         this.doctorName = doctorName;
     }
 
-    public Drawable getImageDoctor() {
+    /*public Drawable getImageDoctor() {
         return imageDoctor;
     }
 
     public void setImageDoctor(Drawable imageDoctor) {
         this.imageDoctor = imageDoctor;
-    }
+    }*/
 
     public String getHospitalName() {
         return hospitalName;

@@ -9,6 +9,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,50 +22,40 @@ import java.util.List;
 public class Main extends AppCompatActivity {
     RecyclerView recyclerView;
     RecycleAdapter adapter;
-    List<HospitalModel> hospitalModelList = new ArrayList<>();
-    ProgressDialog progressDialog;
-    DatabaseReference databaseReference;
+    List<HospitalModel> hospitalModelList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_);
+        hospitalModelList = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerview);
-        adapter = new RecycleAdapter(hospitalModelList, this);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+
+        FirebaseRecyclerOptions<HospitalModel> options =
+                new FirebaseRecyclerOptions.Builder<HospitalModel>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Dataset"), HospitalModel.class)
+                        .build();
+        adapter = new RecycleAdapter(options);
         recyclerView.setAdapter(adapter);
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setOnShowListener(new DialogInterface.OnShowListener() {
-            @Override
-            public void onShow(DialogInterface dialogInterface) {
-                fetchData();
-            }
-        });
+
+
+
+
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        progressDialog.setTitle("Fetching..");
-        progressDialog.setMessage("Loading");
-        progressDialog.show();
+    protected void onStart() {
+        super.onStart();
+        adapter.startListening();
     }
-    private void fetchData() {
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("DataSet");
-        recyclerView.setHasFixedSize(true);
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot: snapshot.getChildren()){
-                    HospitalModel hospitalModel = dataSnapshot.getValue(HospitalModel.class);
-                    hospitalModelList.add(hospitalModel);
-                }
-                adapter.notifyDataSetChanged();
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
     }
+
+
 }
