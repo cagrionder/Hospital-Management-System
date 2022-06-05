@@ -40,9 +40,6 @@ public class Main extends AppCompatActivity {
         adapter = new RecycleAdapter(options);
         recyclerView.setAdapter(adapter);
 
-
-
-
     }
 
     @Override
