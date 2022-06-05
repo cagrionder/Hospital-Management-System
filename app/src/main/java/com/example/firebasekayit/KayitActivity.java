@@ -86,7 +86,7 @@ public class KayitActivity extends AppCompatActivity {
         geri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(KayitActivity.this, MainActivity.class);
+                Intent intent = new Intent(KayitActivity.this, LoginActibity.class);
                 finish();
                 startActivity(intent);
             }
@@ -129,7 +129,7 @@ public class KayitActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(KayitActivity.this, MainActivity.class);
+        Intent intent = new Intent(KayitActivity.this, LoginActibity.class);
         finish();
         startActivity(intent);
     }
