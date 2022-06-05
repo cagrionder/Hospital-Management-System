@@ -17,11 +17,14 @@ import java.util.List;
 public class Main extends AppCompatActivity {
     RecyclerView recyclerView;
     RecycleAdapter adapter;
+    String keyDepartment;
     List<HospitalModel> hospitalModelList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_);
+        keyDepartment = getIntent().getStringExtra("keyName");
+        System.out.println(keyDepartment);
         hospitalModelList = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -29,7 +32,7 @@ public class Main extends AppCompatActivity {
 
         FirebaseRecyclerOptions<HospitalModel> options =
                 new FirebaseRecyclerOptions.Builder<HospitalModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Dataset"), HospitalModel.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Dataset").orderByChild("departmentName").equalTo(keyDepartment), HospitalModel.class)
                         .build();
         adapter = new RecycleAdapter(options);
         recyclerView.setAdapter(adapter);

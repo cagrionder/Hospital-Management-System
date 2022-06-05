@@ -6,7 +6,6 @@ public class HospitalModel {
     String imageDoctor;
     String hospitalName;
     String departmentName;
-    //bla bla
 
 
     public HospitalModel() {

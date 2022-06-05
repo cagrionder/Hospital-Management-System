@@ -14,9 +14,15 @@
             android:title="Hangi Bölüme Gitmeliyim?"
             android:icon="@drawable/info"/>
 
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_change"
+            android:title="Şifre Değiştir"
+            android:icon="@drawable/logout_icon"/>
 
     </group>
-
     <group android:checkableBehavior="single">
 
         <item

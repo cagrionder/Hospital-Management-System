@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -19,10 +20,12 @@ import java.net.InetSocketAddress;
 
 public class MenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    ImageView kardiyoloji, dahiliye;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-
+    String kardText = "kard";
+    String dahiText = "dahi";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,8 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+        kardiyoloji = findViewById(R.id.imageKardi);
+        dahiliye = findViewById(R.id.imageDahiliye);
 
         setSupportActionBar(toolbar);
 
@@ -40,6 +45,18 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        kardiyoloji.setOnClickListener(view ->{
+            Intent intentMainK = new Intent(MenuActivity.this, Main.class);
+            intentMainK.putExtra("keyName", kardText);
+            startActivity(intentMainK);
+            //no no ??veri göndermeli put extra fln o mu
+        });
+        dahiliye.setOnClickListener(view ->{
+            Intent intentMainD = new Intent(MenuActivity.this, Main.class);
+            intentMainD.putExtra("keyName", dahiText);
+            startActivity(intentMainD);
+        });
 
     }
 
@@ -60,9 +77,11 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(MenuActivity.this, WhichDepartment.class));
                 break;
             case R.id.nav_exit:
-                //android studi oçıkış kodunu bulup geliyorum
-                finish();//okey/good tam sıfırlamıyor a
+                finish();
                 break;
+            case R.id.nav_change:
+                System.out.println("aaasasas");
+                startActivity(new Intent(MenuActivity.this, ChangePasswordActivity.class));
 
         }
 

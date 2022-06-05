@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class EntRegEx {
     private String result;
     private int temp1;
-    final private String[] array = {"bas, kulak, burun"};
+    final private String[] array = {"pihti, damar, kalp"};
     public void calculate(String[] compiler){
         for(String input : compiler){
             Pattern pattern = Pattern.compile(input, Pattern.CASE_INSENSITIVE);
@@ -19,7 +19,7 @@ public class EntRegEx {
             }
         }
         if(temp1 >= 2){
-            result = "KBB ye görünün";
+            result = "Kardiyoloji ye görünün";
         }
         else{
             result = "";

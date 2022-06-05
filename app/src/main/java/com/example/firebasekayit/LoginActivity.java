@@ -24,7 +24,8 @@ public class LoginActivity extends AppCompatActivity {
     ImageView img;
     EditText tcNo, sifre;
     Button kaydet, uyeOl;
-    String stringTc, stringSifre;
+    public static String stringTc;
+    String stringSifre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
