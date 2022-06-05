@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KayitActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/patient_256" />
+
+            <EditText
+
+                android:id="@+id/editTextTc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/textdesign"
+                android:hint="T.C. Kimlik No"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="15dp" />
+
+            <EditText
+
+                android:id="@+id/editTextAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textdesign"
+                android:hint="Ad"
+                android:inputType="textPersonName"
+                android:padding="15dp" />
+
+            <EditText
+
+                android:id="@+id/editTextSoyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textdesign"
+                android:hint="Soyad"
+                android:inputType="textPersonName"
+                android:padding="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/radioKadin"
+                        android:layout_width="125dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_female_256"
+                        android:drawablePadding="12dp"
+                        android:padding="15dp"
+                        android:text="Kadın"
+                        android:textColor="@color/radio_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioErkek"
+                        android:layout_width="125dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_male_256"
+                        android:drawablePadding="12dp"
+                        android:padding="15dp"
+                        android:text="Erkek"
+                        android:textColor="@color/radio_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextTarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textdesign"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Doğum Tarihi"
+                android:inputType="number"
+                android:padding="15dp" />
+
+            <EditText
+
+                android:id="@+id/editTextMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textdesign"
+                android:hint="E-Mail"
+                android:inputType="text"
+                android:padding="15dp" />
+
+            <EditText
+
+                android:id="@+id/editTextTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textdesign"
+                android:hint="Telefon numarası"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="15dp" />
+
+            <EditText
+
+                android:id="@+id/editTextAdres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textdesign"
+                android:hint="Adres"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:minLines="2"
+                android:padding="15dp" />
+
+            <EditText
+
+                android:id="@+id/editTextSifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textdesign"
+                android:hint="Şifre"
+                android:inputType="textPassword"
+                android:padding="15dp" />
+
+            <Button
+
+                android:id="@+id/buttonKayit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kayıt Ol" />
+
+            <Button
+                android:id="@+id/buttonGeri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:text="Geri" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
