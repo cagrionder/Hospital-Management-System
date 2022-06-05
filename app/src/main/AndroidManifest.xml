@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.firebasekayit">
 
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Firebasekayit"
         tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".WhichDepartment"
             android:exported="false" />
@@ -35,7 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
