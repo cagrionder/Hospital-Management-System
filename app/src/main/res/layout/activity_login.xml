@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity"
     android:paddingLeft="40dp"
-    android:paddingRight="40dp">
+    android:paddingRight="40dp"
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,28 +18,29 @@
         android:baselineAlignBottom="false" />
 
     <EditText
-        android:padding="15dp"
-        android:background="@drawable/textdesign"
         android:id="@+id/editTextTextTcNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:background="@drawable/textdesign"
         android:ems="10"
         android:hint="T.C. Kimlik No"
         android:inputType="number"
-        android:minHeight="48dp" />
+        android:maxLength="11"
+        android:minHeight="48dp"
+        android:padding="15dp" />
 
     <EditText
-        android:padding="15dp"
-        android:background="@drawable/textdesign"
         android:id="@+id/editTextSifree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:background="@drawable/textdesign"
         android:ems="10"
         android:hint="Parola"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:padding="15dp" />
 
     <Button
         android:id="@+id/button"

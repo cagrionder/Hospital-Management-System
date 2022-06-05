@@ -31,8 +31,8 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    String kardText = "kard";
-    String dahiText = "dahi";
+    String kardText = "Kardiyoloji";
+    String dahiText = "Dahiliye";
     DatabaseReference myRef;
     AlertDialog.Builder builder;
     @Override
