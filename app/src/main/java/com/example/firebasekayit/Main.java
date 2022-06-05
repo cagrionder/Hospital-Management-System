@@ -49,7 +49,7 @@ public class Main extends AppCompatActivity {
         progressDialog.show();
     }
     private void fetchData() {
-        databaseReference = FirebaseDatabase.getInstance().getReference("");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("DataSet");
         recyclerView.setHasFixedSize(true);
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
