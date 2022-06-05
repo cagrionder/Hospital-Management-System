@@ -29,7 +29,7 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.activity_main_);
         hospitalModelList = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerview);
-
+        String aaa = null;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
