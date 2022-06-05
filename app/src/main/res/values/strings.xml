@@ -3,4 +3,6 @@
     <string name="hospital_management">Hospital Management System</string>
     <string name="hintIllness">Rahatsızlıklarınızı girin</string>
     <string name="g_nder">Gönder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

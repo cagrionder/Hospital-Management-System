@@ -4,6 +4,8 @@ package com.example.firebasekayit;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -31,7 +33,6 @@ public class Main extends AppCompatActivity {
                         .build();
         adapter = new RecycleAdapter(options);
         recyclerView.setAdapter(adapter);
-
     }
 
     @Override
