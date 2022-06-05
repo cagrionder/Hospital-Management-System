@@ -24,7 +24,6 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_);
         keyDepartment = getIntent().getStringExtra("keyName");
-        System.out.println(keyDepartment);
         hospitalModelList = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

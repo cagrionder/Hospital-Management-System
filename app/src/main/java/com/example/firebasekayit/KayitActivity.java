@@ -9,6 +9,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -120,6 +121,7 @@ public class KayitActivity extends AppCompatActivity {
                     kayitAdres.setText("");
                     kayitSifre.setText("");
                     Toast.makeText(KayitActivity.this, "Kayıt Başarıyla Gerçekleşti.", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(KayitActivity.this, LoginActivity.class));
                 }
                 else
                     Toast.makeText(KayitActivity.this, "Boş alan bırakmayınız lütfen.", Toast.LENGTH_SHORT).show();
