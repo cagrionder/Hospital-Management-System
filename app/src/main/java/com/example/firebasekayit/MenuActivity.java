@@ -94,6 +94,7 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
 
         switch (item.getItemId()) {
             case R.id.nav_bolum:
+                finish();
                 startActivity(new Intent(MenuActivity.this, WhichDepartment.class));
                 break;
             case R.id.nav_exit:
@@ -101,6 +102,7 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
                 System.exit(0);
                 break;
             case R.id.nav_change:
+                finish();
                 startActivity(new Intent(MenuActivity.this, ChangePasswordActivity.class));
                 break;
             case R.id.nav_delete:

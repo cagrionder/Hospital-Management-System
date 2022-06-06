@@ -1,7 +1,9 @@
 package com.example.firebasekayit;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,5 +38,12 @@ public class WhichDepartment extends AppCompatActivity {
             }
             result = "";
         });
+
+
+    }
+    @Override
+    public void onBackPressed() {
+        finish();
+        startActivity(new Intent(WhichDepartment.this, MenuActivity.class));
     }
 }

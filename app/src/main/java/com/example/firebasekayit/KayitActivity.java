@@ -121,6 +121,7 @@ public class KayitActivity extends AppCompatActivity {
                     kayitAdres.setText("");
                     kayitSifre.setText("");
                     Toast.makeText(KayitActivity.this, "Kayıt Başarıyla Gerçekleşti.", Toast.LENGTH_SHORT).show();
+                    finish();
                     startActivity(new Intent(KayitActivity.this, LoginActivity.class));
                 }
                 else

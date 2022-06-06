@@ -49,6 +49,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                     editTextFirst.setText("");
                     editTextConfirm.setText("");
                     Toast.makeText(ChangePasswordActivity.this, "Başarılı", Toast.LENGTH_SHORT).show();
+                    finish();
                     startActivity(new Intent(ChangePasswordActivity.this, MenuActivity.class));
                 }
                 else{
