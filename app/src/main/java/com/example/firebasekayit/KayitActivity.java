@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -108,6 +109,7 @@ public class KayitActivity extends AppCompatActivity {
                 txtMail = kayitMail.getText().toString().trim();
                 txtAdres = kayitAdres.getText().toString().trim();
                 txtSifre = kayitSifre.getText().toString().trim();
+                boolean check= myRef.child("Kullanicilar").child("tc").equals(txtTc);
                 if (!TextUtils.isEmpty(txtTc) && !TextUtils.isEmpty(txtAd) && !TextUtils.isEmpty(txtSoyad) && !TextUtils.isEmpty(txtCinsiyet) && !TextUtils.isEmpty(txtDt) && !TextUtils.isEmpty(txtTel) && !TextUtils.isEmpty(txtMail) && !TextUtils.isEmpty(txtAdres) && !TextUtils.isEmpty(txtSifre)) {
                     myRef.child("Kullanicilar").child(txtTc).setValue(new User(txtTc, txtAd, txtSoyad, txtCinsiyet, txtDt, txtTel, txtMail, txtAdres, txtSifre));
                     kayitTc.setText("");
@@ -125,7 +127,7 @@ public class KayitActivity extends AppCompatActivity {
                     startActivity(new Intent(KayitActivity.this, LoginActivity.class));
                 }
                 else
-                    Toast.makeText(KayitActivity.this, "Boş alan bırakmayınız lütfen.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(KayitActivity.this, "Kayıt olma işlemi başarısız", Toast.LENGTH_SHORT).show();
             }
         });
     }
